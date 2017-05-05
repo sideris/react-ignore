@@ -1,0 +1,15 @@
+{
+  "name": "react-ignore",
+  "version": "1.0.0",
+  "description": "React Ignore is a Component that can be used to wrap components or elements so React can't interfere",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:sideris/react-ignore.git",
+    "type": "git"
+  },
+  "author": "Petros G. Sideris <pgsideris@gmail.com> (http://sideris.xyz/)",
+  "license": "MIT",
+  "dependencies": {
+    "react-addons": "^0.9.1-deprecated"
+  }
+}

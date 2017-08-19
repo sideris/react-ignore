@@ -2,14 +2,31 @@
   "name": "react-ignore",
   "version": "1.0.0",
   "description": "React Ignore is a Component that can be used to wrap components or elements so React can't interfere",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": {
     "url": "git@github.com:sideris/react-ignore.git",
     "type": "git"
   },
   "author": "Petros G. Sideris <pgsideris@gmail.com> (http://sideris.xyz/)",
   "license": "MIT",
-  "dependencies": {
-    "react-addons": "^0.9.1-deprecated"
+  "devDependencies": {
+    "react": "^15.4.1",
+    "react-build-dist": "^0.0.8",
+    "react-build-lib": "adrianmcli/react-build-lib",
+    "react-dom": "^15.4.1"
+  },
+  "peerDependencies": {
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "ignore"
+  ],
+  "scripts": {
+    "build": "npm run build:lib && npm run build:dist",
+    "build:lib": "react-build-lib",
+    "build:dist": "react-build-dist --bundle-name Ignore.js"
   }
 }
